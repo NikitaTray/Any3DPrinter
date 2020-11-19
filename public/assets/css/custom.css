@@ -1,0 +1,206 @@
+/* here you can put your own css to customize and override the theme */
+.printer-command {
+    /*font-size: 20px !important;*/
+    /*font-weight: bold !important;;*/
+    text-align: center !important;;
+}
+.print-sidebar{
+    max-height:753px;
+    overflow-y:scroll;
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, .4 )
+    url('../img/loading.svg')
+    50% 50%
+    no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    overflow: hidden;
+    display: block;
+}
+.logo{
+    margin-top:25px;
+}
+
+.frame ul{
+    padding-left: 0;
+}
+.frame li{
+    list-style: none;
+}
+.note-label{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.note-value{
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    width:100%;
+}
+.p-0{
+    padding:0;
+}
+.note-info img{
+    padding-left: 10px;
+}
+.float-right{
+    float: right;
+    width:120px;
+    margin: 10px 20px;
+}
+.float-left{
+    float:left;
+    width:120px;
+    margin: 10px 20px;
+}
+.wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+#smart{
+    overflow-y: scroll;
+    padding:10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#last_item{
+    display:none;
+}
+ul#allprinters li .note-span{
+    display:block;
+}
+
+ul#allprinters li .note-input{
+    display:none;
+}
+ul#allprinters li .btn-edit{
+    display:block;
+}
+ul#allprinters li .btn-save{
+    display:none;
+}
+
+ul#allprinters li .btn-cancel{
+    display:none;
+}
+ul#allprinters li .btn-delete{
+    display:block;
+}
+.save-item .note-span{
+    display:none !important;
+}
+.save-item .note-input{
+    display:block !important;
+}
+.save-item .btn-save{
+    display:block !important;
+}
+.save-item .btn-edit{
+    display:none !important;
+}
+.save-item .btn-cancel{
+    display:block !important;
+}
+.save-item .btn-delete{
+    display:none !important;
+}
+.note-input{
+    line-height: 15px;
+}
+
+/*-----------------Monitor Page------------------------------*/
+.panel-title{
+    float:left;
+}
+#basic{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#printerSidebar{
+    float: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#printerSidebar li{
+    float: left;
+    width: 100px;
+    height: 100%;
+    margin: 0 10px 0 0;
+    padding: 0;
+    background: white;
+    /* color: #ddd; */
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px #c1c1c1;
+    border-radius: 3px !important;
+}
+
+.side_txt {
+    margin-left: -5px;
+    font-size: 11px;
+    line-height: 2px;
+}
+.m-0{
+    margin:0 !important;
+}
+#printerSidebar li.active{
+    box-shadow: 0 0 2px 2px rgba(30,148,255,0.44);
+}
+#printerSidebar li.active:hover{
+    box-shadow: 0 0 2px 2px rgba(30,148,255,0.44) !important;
+}
+#printerSidebar li:hover{
+    box-shadow: 0 0 6px 1px rgb(193, 193, 193);
+}
+.panel-btn .btn-default{
+    background: #191919;
+    color: gray;
+    margin-left: 12%;
+}
+@media only screen and (max-width: 600px) {
+    .panel-btn .btn-default{
+        margin-left: 3px;
+    }
+}
+.panel-btn{
+    padding:5px 0;
+}
